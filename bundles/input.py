@@ -1,5 +1,6 @@
 from tkinter import *
 from .customButton import CustomButton
+from data.todos_list import TodoList
 
 
 
@@ -14,4 +15,6 @@ class InputTodo:
         CustomButton(self.task_frame, button_text="Dodaj", button_command=self.action_add)
         
     def action_add(self):
-        pass
+        TodoList().add_todo(self.title.get())
+
+        
