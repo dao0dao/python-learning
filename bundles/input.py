@@ -16,5 +16,6 @@ class InputTodo:
         
     def action_add(self):
         TodoList().add_todo(self.title.get())
+        self.title.delete(0, len(self.title.get()))
 
         
