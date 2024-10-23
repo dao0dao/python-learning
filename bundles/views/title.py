@@ -1,4 +1,4 @@
-from tkinter import Label
+from tkinter import Label, Tk
 
 
 class WindowTitle:

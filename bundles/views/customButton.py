@@ -1,4 +1,4 @@
-from tkinter import Button
+from tkinter import Button, Frame
 from typing import Callable 
 
 class CustomButton:

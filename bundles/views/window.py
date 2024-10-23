@@ -7,7 +7,7 @@ class MainWindow:
     window.geometry("800x600")
     
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    icon_path = os.path.join(current_directory, "..", "images", "icon.png")
+    icon_path = os.path.join(current_directory, "..", "..", "images", "icon.png")
     
     icon = PhotoImage(file=icon_path)
     
