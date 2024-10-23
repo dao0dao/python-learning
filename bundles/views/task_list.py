@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Frame, Tk
 from .task import TodoTask
 from data.todos_list import TodoList
 from models.subscriber import Subscriber

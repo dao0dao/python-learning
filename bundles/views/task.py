@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Frame, Label, Tk
 from typing import Any
 from .customButton import CustomButton
 from models.subscriber import Subscriber

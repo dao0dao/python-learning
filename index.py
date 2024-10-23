@@ -1,8 +1,8 @@
 from tkinter import *
-from bundles.window import gui
-from bundles.title import WindowTitle
-from bundles.input import InputTodo
-from bundles.task_list import TaskList
+from bundles.views.window import gui
+from bundles.views.title import WindowTitle
+from bundles.views.input import InputTodo
+from bundles.views.task_list import TaskList
 
 
 class index():   

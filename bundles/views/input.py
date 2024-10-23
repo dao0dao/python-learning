@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Frame, Tk, Entry
 from .customButton import CustomButton
 from data.todos_list import TodoList
 

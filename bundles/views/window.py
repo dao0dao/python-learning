@@ -1,5 +1,5 @@
 import os
-from tkinter import *
+from tkinter import PhotoImage, Tk
 
 class MainWindow:
     
