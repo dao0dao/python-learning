@@ -19,6 +19,9 @@ class TodoList():
         self.todos = []
         self.subscribers = []
     
+    def get_todo(self, id: int):
+        return [todo for todo in self.todos if todo['id'] == id][0]
+    
     def add_todo(self, todo: str):
         todo = {"title": todo, "id": self.id, "isDone": False}
         self.id += 1 
