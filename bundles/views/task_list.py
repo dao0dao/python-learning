@@ -12,8 +12,10 @@ class TaskList(Subscriber) :
         for todo in TodoList().todos:
             TodoTask(self.task_frame, todo)
             
-    def update(self, todo):
-        TodoTask(self.task_frame, todo)
+    def update(self, action: str, todo: dict):
+        if action == "add_todo":
+            TodoTask(self.task_frame, todo)
+        pass
     
         
             

@@ -7,7 +7,7 @@ class Subscriber(ABC):
         TodoList().subscribe_changes(self)
     
     @abstractmethod
-    def update(self, todo: dict):
+    def update(self, action: str, todo: dict):
         pass
     
     @abstractmethod 

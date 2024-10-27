@@ -28,7 +28,7 @@ class TodoTask(Subscriber):
         TodoList().remove_todo(self.task['id'])
         pass
         
-    def update(self, *args):
+    def update(self, **kwargs):
         pass
     
     def remove(self, todo_id: int):

@@ -21,10 +21,18 @@ class TodoList():
     
     def add_todo(self, todo: str):
         todo = {"title": todo, "id": self.id, "isDone": False}
-        self.id = self.id + 1 
+        self.id += 1 
         self.todos.append(todo)
         for s in self.subscribers:
-            s.update(todo)
+            s.update(action="add_todo", todo=todo)
+        pass
+    
+    def edit_todo(self, todo):
+        for task in self.todos:
+            if task["id"] == todo['id']:
+                task["title"] = todo["title"]
+        for s in self.subscribers:
+            s.update(action="edited_todo", todo=todo)
         pass
     
     def remove_todo(self, todo_id: int):
